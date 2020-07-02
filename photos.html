@@ -24,7 +24,7 @@
               <a href="index.html">
                 <h1 class="mb-0">Happy Birthday!!</h1>
               <span>Nicole <3</span>
-              </a>
+              </a>              
             </div>
             </div>
             <div id="toggler-button">
@@ -35,13 +35,13 @@
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul id="nav-list" class="navbar-nav mr-auto text-center">
-            <li class="nav-item active d-sm-none">
+            <li class="nav-item d-sm-none">
               <a class="nav-link" href="index.html">
                 <img src="img/home.png" width="80" height="80" class="d-inline-block align-top" alt="" loading="lazy">
                 Home
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="photos.html">
                 <img src="img/camera.png" width="80" height="80" class="d-inline-block align-top" alt="" loading="lazy">
                 Photos
@@ -64,26 +64,48 @@
       </nav>
     </header>
 
-    <div id="main-content" class="container">
-      <div class="jumbotron">
-        <img src="img/jumbotron_576.png" alt="Picture of dogs" class="img-fluid d-block d-sm-none">
+    <div id="main-content" class="container-fluid">
+      <h2 id="photos-title" class="text-center">Photos menu</h2>
+      <div class="text-center"> 
+        Please choose one category to continue.
       </div>
-      <div id="home-tiles" class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="photos.html"><div id="photos"><span>Photos</span></div></a>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="cooming-soon.html"><div id="videos"><span>Videos</span></div></a>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <a href="cooming-soon.html">
-            <div id="special">
-              <span>Special</span>
+      <section class="row">
+        <div class="col-lg-3 col-sm-6 col-12">
+          <a href="friends.html">
+            <div class="category-tile">
+              <img width="200" height="200" src="img/photos/friends.png" alt="photo of something">
+              <span>Friends</span>
             </div>
           </a>
         </div>
-      </div> <!-- End of #home-tiles -->
+        <div class="col-lg-3 col-sm-6 col-12">
+          <a href="dogs.html">
+            <div class="category-tile">
+              <img width="200" height="200" src="img/photos/dogs.png" alt="photo of something">
+              <span>Dogs</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <a href="landscapes.html">
+            <div class="category-tile">
+              <img width="200" height="200" src="img/photos/landscapes.png" alt="photo of something">
+              <span>Landscapes</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6 col-12">
+          <a href="all.html">
+            <div class="category-tile">
+              <img width="200" height="200" src="img/photos/all.png" alt="photo of something">
+              <span>All</span>
+            </div>
+          </a>
+        </div>
+      </section>
     </div> <!-- End of #main-content -->
+    
+
     <footer class="card-footer">
       <div class="container">
         <div class="row">

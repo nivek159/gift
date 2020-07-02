@@ -37,18 +37,40 @@ src: url("../fonts/watermelon.ttf");
 	margin-top: 10px;
 }
 
-#nav-list a{
+#nav-list .active a{
 	color: #143454;
 }
 
 #nav-list a:hover{
 	background: #E7E7E7;
 }
-
-#nav-list a span {
-	font-size: 1.8em;
-}
 /* End of Header */
+
+/* Footer */
+.card-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #1D4C7A;
+	border-top: 0;
+}
+.card-footer div.row{
+	margin-bottom: 35px;
+}
+#information, #contact {
+	line-height: 2;
+}
+#quote{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+#information > span, #contact > span{
+	font-size: 1.3em;
+}
+/* End Footer */
 
 /* Home Page */
 
@@ -84,6 +106,10 @@ src: url("../fonts/watermelon.ttf");
 	background: url("../img/special_1200.png") no-repeat center;
 }
 
+hr{
+	border: 1px solid white;
+}
+
 #photos span, #videos span, #special span {
 	position: absolute;
 	bottom: 0;
@@ -98,17 +124,9 @@ src: url("../fonts/watermelon.ttf");
 	background-color: #000;
 	color: #fff;
 }
-/* End Header */
+/* End Home Page */
 
-/* Footer */
-.card-footer {
-	margin-top: 30px;
-	padding-top: 35px;
-	padding-bottom: 30px;
-	background-color: #1D4C7A;
-	border-top: 0;
-}
-
+/* Cooming soon */
 #cooming-soon{
 	font-family: "watermelon", sans-serif; 
 	color: ##2C89E6;
@@ -117,7 +135,99 @@ src: url("../fonts/watermelon.ttf");
 	margin-bottom: 200px;
 	text-shadow: 1px 1px 1px #222;
 }
-/* Extra large devices */
+/* End Cooming soon */
+
+/* Photos */
+#photos-title{
+	margin-top: 50px;
+}
+.category-tile{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto 15px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #ccc;
+}
+
+#photos-title + div{
+	margin-bottom: 50px;
+}
+/* End Photos */
+
+/* Shooping page */
+
+.menu-item-tile{
+	margin-bottom: 25px;
+}
+.menu-item-tile hr{
+	width: 80%;
+}
+.menu-item-tile .menu-item-price{
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+	font-size: .6em;
+}
+
+.menu-item-photo{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+.menu-item-photo div{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #557c3e;
+	text-align: center;
+}
+
+.menu-item-description{
+	padding-right: 30px;
+}
+h3.menu-item-title{
+	margin: 0 0 10px;
+}
+.menu-item-details{
+	font-size: .9em;
+	font-style: italic;
+}
+/* End shooping page */
+
+/* Friends */
+
+.card-text{
+	color: #000;
+}
+
+/* End friends */
+
+/*+++++++++ Extra large devices +++++++++*/
 @media (min-width: 1200px){
 	#logo-img{
 	background: url("../img/cake.png") no-repeat ;
@@ -253,5 +363,13 @@ src: url("../fonts/watermelon.ttf");
 		padding-top: 0;
 		margin: 0 auto 15px;
 	}
-
+	.menu-item-photo{
+		margin-right: auto;
+	}
+	.menu-item-tile .menu-item-price{
+		text-align: center;
+	}
+	.menu-item-description{
+		text-align: center;
+	}
 }
