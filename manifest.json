@@ -3,7 +3,7 @@
 	"name": "Nicole's Birthday Gift",
 	"lang": "en",
 	"description": "This is the gift I gave to my friend Nicole when she turned 18",
-	"start_url": "./?v3&utm_source=web_app_manifest",
+	"start_url": "./",
 	"background_color": "#e64d43",
 	"theme_color": "#e64d43",
 	"dir": "ltr",
