@@ -16,20 +16,15 @@ const limitCacheSize = (name, size) => {
 };
 
 // install event
-self.addEventListener('install', function(event) {
-    // Perform install steps
-    console.log('installing sw');
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(function(cache) {
-                console.log('Opened cache');
-                var x = cache.addAll(urlsToCache);
-                console.log('cache added');
-                return x;
-            })
+self.addEventListener('install', evt => {
+    //console.log('service worker installed');
+    evt.waitUntil(
+        caches.open(staticCacheName).then((cache) => {
+            console.log('caching shell assets');
+            cache.addAll(assets);
+        })
     );
 });
-
 
 // activate event
 self.addEventListener('activate', evt => {
