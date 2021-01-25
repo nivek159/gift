@@ -1,15 +1,15 @@
 {
-	"short_name": "Gift",
-	"name": "Nicole's Birthday Gift",
-	"lang": "en",
-	"description": "This is the gift I gave to my friend Nicole when she turned 18",
-	"start_url": "./?v3&utm_source=web_app_manifest",
-	"background_color": "#e64d43",
-	"theme_color": "#e64d43",
-	"dir": "ltr",
-	"display": "standalone",
-	"orientation": "any",
-	"icons": [
+    "short_name": "Gift",
+    "name": "Nicole's Birthday Gift",
+    "lang": "en",
+    "description": "This is the gift I gave to my friend Nicole when she turned 18",
+    "start_url": "./?v3&utm_source=web_app_manifest",
+    "background_color": "#e64d43",
+    "theme_color": "#e64d43",
+    "dir": "ltr",
+    "display": "standalone",
+    "orientation": "any",
+    "icons": [
 		{
 			"src": "icon/android-icon-192x192-dunplab-manifest-37124.png",
 			"type": "image/png",
@@ -76,5 +76,7 @@
 			"sizes": "16x16"
 		}
 	],
-	"prefer_related_applications": false
+    "prefer_related_applications": false,
+    "url": "https://nivek159.github.io/gift/index.html",
+    "screenshots": []
 }
