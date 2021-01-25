@@ -1,7 +1,7 @@
 const staticCacheName = 'static-v1.0.0';
 const dynamicCacheName = 'dynamic-v1.0.0';
 const assets = [
-    '/'
+    './'
 ]
 
 // cache size limit function
