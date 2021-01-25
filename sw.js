@@ -1,7 +1,7 @@
 const staticCacheName = 'static-v1.0.0';
 const dynamicCacheName = 'dynamic-v1.0.0';
 const assets = [
-    './'
+    'https://nivek159.github.io/gift/index.html'
 ]
 
 // cache size limit function
